@@ -47,9 +47,7 @@ body {
 .logo-link-dark-theme:hover,
 .logo-link:hover,
 .logo-link-dark-theme:focus,
-.logo-link:focus,
-.first-section-btn:hover,
-.first-section-btn:focus {
+.logo-link:focus {
   color: var(--color);
 }
 .buttons-list-btn,

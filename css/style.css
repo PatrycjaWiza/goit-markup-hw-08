@@ -20,8 +20,7 @@ h6  {
 p {
   padding: 0;
 }
-ul,
-ol  {
+ul  {
   padding: 0;
   margin: 0;
 }
@@ -33,6 +32,16 @@ ol  {
 }
 img {
   display: block;
+}
+.container  {
+  max-width: 1200px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ===== COMPONENTS ===== */
 .logo-link,
@@ -54,7 +63,7 @@ img {
 }
 .what-we-do-title,
 .about-us-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -84,6 +93,33 @@ img {
 /* ===== END COMPONENTS ===== */
 
 /* ===== HEADER ===== */
+.head-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  margin-bottom: 25px;
+}
+.head-section {
+  border-bottom: 1px solid #ECECEC;
+}
+.navigation {
+  display: flex;
+}
+.navigation-list, 
+.contact-list    {
+  display: flex;
+  align-items: center;
+}
+.logo-link   {
+  margin-right: 93px;
+  }
+.navigation-list-item:not(:last-child)  {
+  margin-right: 46px;
+}
+.contact-list-item:not(:first-child) {
+  margin-left: 50px;
+}
 .navigation-list-link,
 .contact-list-link {
   font-style: normal;
@@ -101,6 +137,11 @@ img {
 /* ===== END HEADER ===== */
 
 /* ===== INDEX SECTION 1 ===== */
+.first-section .container{
+  padding-left: 252px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
 .first-section-title {
   font-weight: 900;
   font-size: 44px;
@@ -109,18 +150,40 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
+  width: 696px;
+  padding-bottom: 30px;
+    }
 .first-section-btn {
   font-weight: bold;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--color);
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   cursor: pointer;
+  margin-left: 252px;
+  padding: 0 41px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+}
+.first-section {
+  background-color: #2f303a;
+}
+/* ===== END INDEX SECTION 1 ===== */
+
+/* ==== ARTICLE SECTION ==== */
+.article .container{
+  width: 1200px;
+  padding-bottom: 0;
+}
+.article-list{
+  display: flex;
+}
+.article-list-item:not(:last-child){
+padding-right: 30px;
 }
 .article-list-title {
   font-weight: bold;
@@ -135,15 +198,41 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.first-section {
-  background-color: #2f303a;
-}
-/* ===== END INDEX SECTION 1 ===== */
+
+/* ==== END ARTICLE SECTION ==== */
 
 /* ===== INDEX SECTION 2 ===== */
+.what-we-do-list {
+  display: flex;
+}
+.what-we-do-item:not(:last-child){
+  margin-right: 30px;
+}
+.what-we-do-title{
+  padding-bottom: 50px;
+}
 /* ===== END INDEX SECTION 2 ===== */
 
 /* ===== INDEX SECTION 3 ===== */
+.about-us-list {
+  display:flex
+}
+.about-us-item:not(:last-child)  {
+  margin-right: 30px;
+}
+.about-us-item  {
+  background: #FFFFFF;
+}
+.about-us-name {
+  padding-top: 30px;
+}
+.about-us-title {
+  padding-bottom: 50px;
+}
+.about-us-description{
+  padding-top: 10px;
+  margin-top: 0;
+}
 .about-us-name {
   font-weight: 500;
   font-size: 16px;

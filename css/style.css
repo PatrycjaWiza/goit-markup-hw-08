@@ -76,11 +76,8 @@ img {
 .address-list-link:hover,
 .address-list-link:focus,
 .address-list-link-google-maps:hover,
-.address-list-link-google-maps:focus,
-.logo-link-dark-theme:hover,
-.logo-link:hover,
-.logo-link-dark-theme:focus,
-.logo-link:focus {
+.address-list-link-google-maps:focus
+ {
   color: var(--color);
 }
 .buttons-list-btn,
@@ -97,8 +94,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  margin-bottom: 25px;
+  height: 80px;
 }
 .head-section {
   border-bottom: 1px solid #ececec;

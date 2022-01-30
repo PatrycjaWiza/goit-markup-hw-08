@@ -76,10 +76,10 @@ img {
 .address-list-link:hover,
 .address-list-link:focus,
 .address-list-link-google-maps:hover,
-.address-list-link-google-maps:focus
- {
+.address-list-link-google-maps:focus {
   color: var(--color);
 }
+
 .buttons-list-btn,
 .first-section-btn {
   cursor: pointer;
@@ -90,6 +90,10 @@ img {
 /* ===== END COMPONENTS ===== */
 
 /* ===== HEADER ===== */
+.icon-navi {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .head-section .container {
   display: flex;
   align-items: center;
@@ -107,7 +111,7 @@ img {
   display: flex;
   align-items: center;
 }
-.logo-link {
+.logo-link:not(:last-child) {
   margin-right: 93px;
 }
 .navigation-list-item:not(:last-child) {
@@ -166,11 +170,31 @@ img {
   border-radius: 5px;
 }
 .first-section {
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/brackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px, cover;
 }
 /* ===== END INDEX SECTION 1 ===== */
 
 /* ==== ARTICLE SECTION ==== */
+
+.icon-article {
+  width: 70px;
+  height: 70px;
+}
+.icon-article-container {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .article .container {
   width: 1200px;
   padding-bottom: 0;
@@ -210,6 +234,36 @@ img {
 /* ===== END INDEX SECTION 2 ===== */
 
 /* ===== INDEX SECTION 3 ===== */
+
+.about-us-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #afb1b8;
+}
+.about-us-social-link:hover,
+.about-us-social-link:focus {
+  background-color: var(--color);
+  color: #ffffff;
+}
+.about-us-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.about-us-social-icon:hover,
+.about-us-social-icon:focus {
+  fill: currentColor;
+}
 .about-us-list {
   display: flex;
 }
@@ -251,7 +305,85 @@ img {
 }
 /* ===== END INDEX SECTION 3 ===== */
 
+/* ===== INDEX SECTION 4 ===== */
+.clients-list {
+  display: flex;
+}
+.clients-logo {
+  fill: currentColor;
+}
+.clients-list-item:not(last-child) {
+  margin-right: 30px;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  color: var(--color);
+  border: 1px solid var(--color);
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+/* ===== END INDEX SECTION 4 ===== */
+
 /* ===== FOOTER ===== */
+.foot-right-side-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.foot-right-side-item:not(:last-child) {
+  margin-right: 10px;
+}
+.foot-right-side-link:hover,
+.foot-right-side-link:focus {
+  background-color: var(--color);
+}
+.foot-right-side-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.foot-right-side-list {
+  display: flex;
+}
+.foot-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.foot-right-side {
+  padding-left: 70px;
+  padding-top: 12px;
+}
+.foot-right-side-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .foot .container {
   padding-top: 60px;
 }
@@ -308,6 +440,11 @@ img {
 /* ===== END PORTFOLIO BUTTONS ===== */
 
 /* ===== PORTFOLIO GALLERY ===== */
+.portfolio-list-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;

@@ -39,13 +39,19 @@
         </nav>
         <ul class="contact-list list">
           <li class="contact-list-item">
-            <a class="contact-list-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="contact-list-link link" href="mailto:info@devstudio.com">
+              <svg class="icon-navi" width="16px" height="12px">
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="contact-list-item">
-            <a class="contact-list-link link" href="tel:+48111111111"
-              >+48 111 111 111</a
+            <a class="contact-list-link link" href="tel:+48111111111">
+              <svg class="icon-navi" width="10px" height="16px">
+                <use href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
             >
           </li>
         </ul>
@@ -205,33 +211,69 @@
         </div>
       </div>
     </main>
+    <!-- footer section -->
     <footer class="foot">
-      <div class="container">
-        <a class="logo-link-dark-theme link" href="index.html"
-          ><span class="logo">Web</span>Studio</a
-        >
-        <address class="address" id="kontakt">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a
-                class="address-list-link-google-maps link"
-                href="https://goo.gl/maps/Lo8xJkMnPi81U5u96"
-                target="_blank"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
+      <div class="foot-wrapper container">
+        <div class="foot-left-side">
+          <a class="logo-link-dark-theme link" href="index.html"
+            ><span class="logo">Web</span>Studio</a
+          >
+          <address class="address" id="kontakt">
+            <ul class="address-list list">
+              <li class="address-list-item">
+                <a
+                  class="address-list-link-google-maps link"
+                  href="https://goo.gl/maps/Lo8xJkMnPi81U5u96"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="foot-right-side">
+          <h3 class="foot-right-side-title">DOŁĄCZ DO NAS</h3>
+          <ul class="foot-right-side-list list">
+            <li class="foot-right-side-item">
+              <a class="foot-right-side-link" href="#">
+                <svg class="foot-right-side-icon" width="" height="">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list-item">
-              <a class="address-list-link link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li class="foot-right-side-item">
+              <a class="foot-right-side-link" href="#">
+                <svg class="foot-right-side-icon" width="" height="">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list-item">
-              <a class="address-list-link link" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
+            <li class="foot-right-side-item">
+              <a class="foot-right-side-link" href="#">
+                <svg class="foot-right-side-icon" width="" height="">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-right-side-item">
+              <a class="foot-right-side-link" href="#">
+                <svg class="foot-right-side-icon" width="" height="">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

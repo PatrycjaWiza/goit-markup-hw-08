@@ -148,7 +148,6 @@ img {
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #ffffff;
   width: 696px;
   padding-bottom: 30px;
@@ -174,7 +173,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/brackground.jpg");
+    url("../images/brackground.jpg");
   background-repeat: no-repeat;
   background-size: 1600px, cover;
 }
@@ -381,7 +380,6 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   display: block;
-  text-align: center;
   padding-bottom: 20px;
 }
 .foot .container {
@@ -430,12 +428,15 @@ img {
   letter-spacing: 0.03em;
   border: none;
   padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .buttons-list-btn:hover,
 .buttons-list-btn:focus {
   background-color: var(--color);
   color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ===== END PORTFOLIO BUTTONS ===== */
 

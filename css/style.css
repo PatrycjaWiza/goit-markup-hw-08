@@ -175,7 +175,7 @@ img {
     ),
     url("../images/brackground.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px, cover;
+  background-size: cover;
 }
 /* ===== END INDEX SECTION 1 ===== */
 

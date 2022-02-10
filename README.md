@@ -2,4 +2,4 @@
 
 Strona Webstudio
 
-https://patrycjawiza.github.io/goit-markup-hw-04/
+https://patrycjawiza.github.io/goit-markup-hw-05/

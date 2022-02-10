@@ -64,7 +64,7 @@
           <h1 class="first-section-title">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="first-section-btn" type="button">Zamów usługę</button>
+          <button class="first-section-btn" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <!-- article section  -->
@@ -445,5 +445,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="modal-window-close-icon">
+            <use href="/images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

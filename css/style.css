@@ -617,5 +617,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: scaley(0.1);
 }
 /* ===== END MODAL WINDOW ===== */

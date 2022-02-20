@@ -707,7 +707,6 @@ img {
   position: relative;
   padding: 12px 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .contact-inpt:focus-visible {
   outline: none;
@@ -715,7 +714,7 @@ img {
 .contact-inpt:focus-within {
   border-color: var(--color);
 }
-.highlight-icon:focus-within > svg {
+.contact-inpt:focus-within + svg {
   fill: var(--color);
 }
 .txtarea {
@@ -750,16 +749,44 @@ img {
 .contact-lbl:not(:last-child) {
   padding-bottom: 10px;
 }
-.agreement,
-.form-link {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
 .agreement {
   color: #757575;
   text-align: center;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}
+.agreement::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  margin-right: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agreement-inpt:checked + .agreement::before {
+  background-color: #2196f3;
+  background-image: url(../images/Vector.svg);
+  background-size: 11px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.agreement-src {
+  color: var(--color);
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-skip-ink: none;
 }
 .form-submit {
   width: 200px;

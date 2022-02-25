@@ -1,0 +1,39 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    opacity: 0.9;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .overlay-box {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-list-item:hover .overlay {
+    transform: translateY(0);
+  }
+  .portfolio-list-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .portfolio-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list-border-bottom {
+    border: 1px solid #eeeeee;
+    padding: 20px 24px;
+  }

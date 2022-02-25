@@ -1,3 +1,22 @@
+@import "./utils/visually-hidden";
+
 @import "./base/common";
 @import "./base/container";
-@import "./utils/visually-hidden"
+
+@import "./components/logo";
+@import "./components/modal-btn";
+@import "./components/social-links";
+@import "./components/title";
+@import "./components/description";
+@import "./components/backdrop";
+@import "./components/modal";
+
+@import "./layouts/header";
+@import "./layouts/section1";
+@import "./layouts/article";
+@import "./layouts/section2";
+@import "./layouts/section3";
+@import "./layouts/section4";
+@import "./layouts/footer";
+
+@import "./pages/portfolio";

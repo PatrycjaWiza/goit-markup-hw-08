@@ -4,7 +4,6 @@
     --color: #2196f3;
     --main-color: #212121;
   }
-  
   body {
     font-family: var(--main-font);
     color: var(--main-color);
@@ -33,13 +32,4 @@
   img {
     display: block;
   }
-  .navigation-list-link:hover,
-.navigation-list-link:focus,
-.contact-list-link:hover,
-.contact-list-link:focus,
-.address-list-link:hover,
-.address-list-link:focus,
-.address-list-link-google-maps:hover,
-.address-list-link-google-maps:focus {
-  color: var(--color);
-}
+  

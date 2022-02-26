@@ -2,6 +2,7 @@
 
 @import "./base/common";
 @import "./base/container";
+@import "./base/section";
 
 @import "./components/logo";
 @import "./components/modal-btn";
@@ -10,12 +11,16 @@
 @import "./components/description";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/newsletter";
 
+@import "./layouts/menu";
 @import "./layouts/header";
-@import "./layouts/section1";
 @import "./layouts/article";
-@import "./layouts/section2";
-@import "./layouts/section3";
-@import "./layouts/section4";
+@import "./layouts/what-we-do";
+@import "./layouts/about-us";
+@import "./layouts/clients";
 @import "./layouts/footer";
 
+@import "./pages/portfolio";
+@import "./pages/portfolio-btns";
+@import "./pages/portfolio-description";

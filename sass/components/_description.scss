@@ -1,10 +1,10 @@
-.article-list-description {
+.article__description {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
   }
-  .what-we-do-description {
+  .what-we-do__description {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,32 +19,13 @@
     color: #ffffff;
     margin: 0;
   }
-  .about-us-description {
+  .about-us__description {
     padding-top: 10px;
     margin-top: 0;
-  }
-  .about-us-description {
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
   }
-  .portfolio-list-description {
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0px;
-  }
-  .overlay-description {
-    font-size: 18px;
-    line-height: 1.556;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    position: absolute;
-    top: 49px;
-    left: 24px;
-    width: 301px;
-    margin: 0;
-  }
+  

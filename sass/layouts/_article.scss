@@ -1,23 +1,19 @@
-.icon-article {
-    width: 70px;
-    height: 70px;
-  }
-  .icon-article-container {
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .article .container {
-    width: 1200px;
-    padding-bottom: 0;
-  }
-  .article-list {
-    display: flex;
-  }
-  .article-list-item:not(:last-child) {
-    padding-right: 30px;
-  }
+.article__image__wrapper {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article__icon {
+  width: 70px;
+  height: 70px;
+}
+.article__list {
+  display: flex;
+}
+.article__item:not(:last-child) {
+  padding-right: 30px;
+}

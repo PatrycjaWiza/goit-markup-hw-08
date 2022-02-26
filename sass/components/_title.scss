@@ -1,12 +1,4 @@
-.what-we-do-title,
-.about-us-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.first-section-title {
+.header__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -18,14 +10,15 @@
   width: 696px;
   padding-bottom: 30px;
 }
-.article-list-title {
+.article__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.clients-title {
+.what-we-do__title,
+.about-us__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -33,7 +26,15 @@
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
-.foot-right-side-title {
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+.foo-right-side__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -48,10 +49,4 @@
   line-height: 2;
   letter-spacing: 0.06em;
   padding-bottom: 4px;
-}
-.what-we-do-title {
-  padding-bottom: 50px;
-}
-.about-us-title {
-  padding-bottom: 50px;
 }

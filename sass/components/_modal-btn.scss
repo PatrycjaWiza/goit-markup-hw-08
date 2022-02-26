@@ -1,11 +1,10 @@
-.buttons-list-btn,
-.first-section-btn {
+.header__btn {
   cursor: pointer;
   font-family: Roboto;
   font-size: 16px;
   text-align: center;
 }
-.first-section-btn {
+.header__btn {
   display: block;
   font-weight: bold;
   line-height: 1.875;
@@ -22,7 +21,7 @@
   height: 50px;
   border-radius: 5px;
 }
-.foo-btn {
+.newsletter__btn {
   background-color: var(--color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

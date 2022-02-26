@@ -1,15 +1,19 @@
-.logo-link,
-.logo-link-dark-theme {
-  font-family: 'Raleway';
+.logo__link,
+.logo__link--dark-theme {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
 }
-.logo-link {
+.logo__link {
   color: #000000;
+
+  &:not(:last-child) {
+    margin-right: 93px;
+  }
 }
-.logo-link-dark-theme {
+.logo__link--dark-theme {
   color: #ffffff;
 }
 .logo {

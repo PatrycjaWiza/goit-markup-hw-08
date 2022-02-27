@@ -1,20 +1,20 @@
 .logo {
-  font-family: "Raleway";
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
 }
 .logo--light-theme {
-  color: #000000;
+  color: $dark-theme;
 
   &:not(:last-child) {
     margin-right: 93px;
   }
 }
 .logo--dark-theme {
-  color: #ffffff;
+  color: $light-theme;
 }
 .logo_accent {
-  color: var(--color);
+  color: $color;
 }

@@ -1,5 +1,5 @@
 .foo {
-  background: #2f303a;
+  background: $foo-background;
 }
 .foo__wrapper {
   display: flex;
@@ -15,7 +15,7 @@
 
 .address__link,
 .address__maps-link {
-  font-family: Roboto;
+  font-family: $main-font;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -27,15 +27,15 @@
 
   &:hover,
   &:focus {
-    color: var(--color);
+    color: $color;
   }
 }
 .address__maps-link {
-  color: #fff;
+  color: $light-theme;
 
   &:hover,
   &:focus {
-    color: var(--color);
+    color: $color;
   }
 }
 .foo-right-side {

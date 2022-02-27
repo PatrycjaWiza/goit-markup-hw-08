@@ -1,18 +1,18 @@
-.portfolio-list__description {
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0px;
-  }
-  .overlay-description {
-    font-size: 18px;
-    line-height: 1.556;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    position: absolute;
-    top: 49px;
-    left: 24px;
-    width: 301px;
-    margin: 0;
-  }
+.bottom-card__description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  margin: 0px;
+}
+.overlay__description {
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: $light-theme;
+  position: absolute;
+  top: 49px;
+  left: 24px;
+  width: 301px;
+  margin: 0;
+}

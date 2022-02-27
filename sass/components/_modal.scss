@@ -73,10 +73,10 @@
     outline: none;
   }
   &:focus-within {
-    border-color: var(--color);
+    border-color: $color;
   }
   &:focus-within + svg {
-    fill: var(--color);
+    fill: $color;
   }
 }
 

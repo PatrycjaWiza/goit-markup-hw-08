@@ -375,11 +375,11 @@ img {
 }
 
 .contact-inpt:focus-within {
-  border-color: var(--color);
+  border-color: #2196f3;
 }
 
 .contact-inpt:focus-within + svg {
-  fill: var(--color);
+  fill: #2196f3;
 }
 
 .txtarea {

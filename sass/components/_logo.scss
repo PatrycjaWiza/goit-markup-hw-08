@@ -1,20 +1,21 @@
 .logo {
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
 }
 .logo--light-theme {
   color: $dark-theme;
-
-  &:not(:last-child) {
-    margin-right: 93px;
-  }
 }
 .logo--dark-theme {
   color: $light-theme;
 }
 .logo_accent {
   color: $color;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.167;
+    margin-right: 276px;
+  }
 }

@@ -1,5 +1,5 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
 Strona Webstudio
 
-https://patrycjawiza.github.io/goit-markup-hw-07/
+https://patrycjawiza.github.io/goit-markup-hw-08/

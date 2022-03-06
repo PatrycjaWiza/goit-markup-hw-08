@@ -74,7 +74,7 @@
         </div>
       </section>
       <!-- article section  -->
-      <!-- <div class="article">
+      <div class="article">
         <div class="container section">
           <ul class="article__list list">
             <li class="article__item">
@@ -127,9 +127,9 @@
             </li>
           </ul>
         </div>
-      </div> -->
-      <!-- what we do section -->
-      <!-- <section class="what-we-do section">
+      </div>
+      <!-- what-we-do section -->
+      <section class="what-we-do section">
         <div class="container">
           <h2 class="what-we-do__title">Czym się zajmujemy</h2>
           <ul class="what-we-do__list list">
@@ -171,20 +171,28 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- about us section -->
-      <!-- <section class="about-us section" id="agency">
+      </section>
+      <!-- about-us section -->
+      <section class="about-us section" id="agency">
         <div class="container">
           <h2 class="about-us__title">Nasz zespół</h2>
           <ul class="about-us__list list">
             <li class="about-us__item">
-              <img
-                class="about-us__img"
-                src="images/section3/section3_img1.jpg"
-                alt="John Doe Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us/about-us-mobile-1.jpg    1x,
+                    ./images/about-us/about-us-mobile-1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="about-us__img"
+                  src="./images/about-us/about-us-mobile-1.jpg"
+                  alt="John Doe Product Designer"
+                />
+              </picture>
               <h3 class="about-us__name">John Doe</h3>
               <p class="about-us__description">Product Designer</p>
               <ul class="social__list list">
@@ -219,13 +227,21 @@
               </ul>
             </li>
             <li class="about-us__item">
-              <img
-                class="about-us__img"
-                src="images/section3/section3_img2.jpg"
-                alt="John Doe Front End Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us/about-us-mobile-2.jpg    1x,
+                    ./images/about-us/about-us-mobile-2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="about-us__img"
+                  src="./images/about-us/about-us-mobile-2.jpg"
+                  alt="John Doe Product Designer"
+                />
+              </picture>
               <h3 class="about-us__name">John Doe</h3>
               <p class="about-us__description">Front End Developer</p>
               <ul class="social__list list">
@@ -260,13 +276,21 @@
               </ul>
             </li>
             <li class="about-us__item">
-              <img
-                class="about-us__img"
-                src="images/section3/section3_img3.jpg"
-                alt="John Doe Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us/about-us-mobile-3.jpg    1x,
+                    ./images/about-us/about-us-mobile-3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="about-us__img"
+                  src="./images/about-us/about-us-mobile-3.jpg"
+                  alt="John Doe Product Designer"
+                />
+              </picture>
               <h3 class="about-us__name">John Doe</h3>
               <p class="about-us__description">Marketing</p>
               <ul class="social__list list">
@@ -301,13 +325,20 @@
               </ul>
             </li>
             <li class="about-us__item">
-              <img
-                class="about-us__img"
-                src="images/section3/section3_img4.jpg"
-                alt="John Doe UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us/about-us-mobile-4.jpg 1x,
+                    ./images/about-us/about-us-mobile-4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="about-us__img"
+                  src="./images/about-us/about-us-mobile-4.jpg"
+                  alt="John Doe Product Designer"
+                />
               <h3 class="about-us__name">John Doe</h3>
               <p class="about-us__description">UI Designer</p>
               <ul class="social__list list">
@@ -343,9 +374,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- clients section -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Nasi klienci</h2>
           <ul class="clients__list list">
@@ -393,10 +424,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="foo">
+    <footer class="foo section">
       <div class="foo__wrapper container">
         <div class="foo-left-side">
           <a class="logo logo--dark-theme link" href="index.html"
@@ -481,8 +512,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form name="contact-form" autocomplete="on">
             <div
@@ -541,7 +572,6 @@
           </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,18 +1,20 @@
 .foo {
   background: $foo-background;
+  padding-bottom: 60px;
 }
 .foo__wrapper {
-  display: flex;
-  align-items: flex-start;
+  text-align: center;
+  & .logo {
+    margin-right: 0px;
+  }
 }
 .address {
   padding-top: 20px;
   padding-bottom: 60px;
 }
 .address__item:not(:first-child) {
-  padding-top: 9px;
+  padding-top: 8px;
 }
-
 .address__link,
 .address__maps-link {
   font-family: $main-font;
@@ -39,9 +41,13 @@
   }
 }
 .foo-right-side {
-  padding-left: 70px;
-  padding-top: 12px;
+  text-align: center;
+  margin-bottom: 60px;
 }
-.foo__aside {
-  margin-left: 78px;
-}
+// .foo__aside {
+//   margin-left: 78px;
+// }
+// .foo__wrapper {
+//   display: flex;
+//   align-items: flex-start;
+// }

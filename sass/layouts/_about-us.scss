@@ -1,9 +1,7 @@
 .about-us {
   background: $bakcground-color;
 }
-.about-us__list {
-  display: flex;
-}
+
 .about-us__item {
   background: $light-theme;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -11,7 +9,7 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 .about-us__name {
@@ -22,3 +20,10 @@
   letter-spacing: 0.03em;
   padding-top: 30px;
 }
+
+// .about-us__list {
+//   display: flex;
+// }
+// .about-us__item:not(:last-child) {
+//   margin-right: 30px;
+// }

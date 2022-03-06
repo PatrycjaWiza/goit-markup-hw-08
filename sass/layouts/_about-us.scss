@@ -20,7 +20,23 @@
   letter-spacing: 0.03em;
   padding-top: 30px;
 }
-
+.about-us__img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about-us__item {
+    max-width: 354px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2-30px);
+  }
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+}
 // .about-us__list {
 //   display: flex;
 // }

@@ -1,6 +1,7 @@
 .menu {
   border-bottom: 1px solid #ececec;
 }
+
 .navigation__link,
 .contact__link {
   font-style: normal;
@@ -18,44 +19,11 @@
     color: $color;
   }
 }
-.contact__link {
-  color: $secondary-color;
 
-  &:hover,
-  &:focus {
-    color: $color;
-  }
-}
-
-.contact__icon {
-  fill: currentColor;
-}
-.navigation__list,
-.contact__list {
-  display: flex;
-  align-items: center;
-}
 .navigation__item {
   position: relative;
 }
-.bar::after,
-.bar-agency::after {
-  content: "";
-  height: 4px;
-  background-color: $color;
-  border-radius: 2px;
-  display: inline-block;
-  position: absolute;
-  bottom: -32px;
-  left: 0;
-}
-.bar::after {
-  width: 58px;
-}
 
-.bar-agency::after {
-  width: 53px;
-}
 @media screen and (max-width: 767px) {
   #menu-button {
     width: 24px;
@@ -67,18 +35,72 @@
       cursor: pointer;
     }
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+  }
   .navigation__list,
   .contact__list {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    margin-left: 83px;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .navigation__link,
+  .contact__link {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+  }
+  .contact__icon {
+    fill: currentColor;
+    margin-right: 8px;
+  }
+  .contact__link {
+    color: $secondary-color;
+    margin-bottom: 10px;
 
-//   .navigation__item:not(:last-child) {
-//     margin-right: 46px;
-//   }
+    &:hover,
+    &:focus {
+      color: $color;
+    }
+  }
+  .bar::after,
+  .bar-agency::after {
+    content: "";
+    height: 4px;
+    background-color: $color;
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+  }
+  .bar::after {
+    width: 58px;
+  }
+
+  .bar-agency::after {
+    width: 53px;
+  }
+}
+
 // .contact__item:not(:first-child) {
 //   margin-left: 50px;
-// }
-// .contact__icon {
-//   fill: currentColor;
 // }

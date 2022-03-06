@@ -20,7 +20,11 @@
   text-align: center;
   padding-top: 30px;
 }
-
+@media screen and (min-width: 768px) {
+  .article__title {
+    text-align: left;
+  }
+}
 .what-we-do__title {
   font-weight: 700;
   font-size: 36px;

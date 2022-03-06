@@ -1,6 +1,10 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  .article & {
+    padding-bottom: 15px;
+  }
 }
 
 // .section {

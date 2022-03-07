@@ -1,15 +1,13 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .clients__item {
-  &:nth-child(2n + 1) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  &:nth-child(5) {
-    margin-bottom: 0px;
-  }
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 .clients__link {
   display: flex;
@@ -32,7 +30,15 @@
 .clients__logo {
   fill: currentColor;
 }
-
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+    .clients__item {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+}
 // .clients__item:not(last-child) {
 //   margin-right: 30px;
 // }

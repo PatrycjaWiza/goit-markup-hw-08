@@ -390,7 +390,6 @@ img {
   position: relative;
   padding: 12px 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 
 .contact-inpt::placeholder {
@@ -461,6 +460,7 @@ img {
   border: 2px solid #212121;
   margin-right: 8px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .agreement-inpt:checked + .agreement::before {
@@ -632,6 +632,11 @@ img {
   }
 }
 
+.header {
+  width: 100%;
+  background-image: 100%;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-bg-mobile.jpg");
@@ -786,15 +791,14 @@ img {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.clients__item:nth-child(2n + 1) {
+.clients__item {
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.clients__item:nth-child(5) {
-  margin-bottom: 0px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 .clients__link {
@@ -816,6 +820,16 @@ img {
 
 .clients__logo {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .clients__list .clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .foo {
@@ -871,6 +885,15 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .foo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
 .portfolio__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -903,11 +926,35 @@ img {
 .overlay-box {
   position: relative;
   overflow: hidden;
+  min-height: 294px;
 }
 
 .bottom-card {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.portfolio__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .portfolio .portfolio__item {
+    max-width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    padding-bottom: 0px;
+  }
+  .portfolio .portfolio__item:nth-child(1) .bottom-card {
+    min-height: 148px;
+  }
 }
 
 .filter {
@@ -963,6 +1010,17 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+  .filter .filter__item {
+    margin-bottom: 0px;
+  }
+}
+
 .bottom-card__description {
   font-size: 16px;
   line-height: 1.875;
@@ -982,5 +1040,12 @@ img {
   margin: 0;
   max-width: 402px;
   min-height: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay__description {
+    top: 49px;
+    max-width: 306px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

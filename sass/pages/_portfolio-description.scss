@@ -17,3 +17,9 @@
   max-width: 402px;
   min-height: 140px;
 }
+@media screen and (min-width: 768px) {
+  .overlay__description {
+    top: 49px;
+    max-width: 306px;
+  }
+}

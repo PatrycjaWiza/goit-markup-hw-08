@@ -44,10 +44,11 @@
   text-align: center;
   margin-bottom: 60px;
 }
-// .foo__aside {
-//   margin-left: 78px;
-// }
-// .foo__wrapper {
-//   display: flex;
-//   align-items: flex-start;
-// }
+@media screen and (min-width: 768px) {
+  .foo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}

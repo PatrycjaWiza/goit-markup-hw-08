@@ -1,6 +1,10 @@
 .inactive {
   display: none;
 }
+.mobile-menu__btn,
+#menu-button {
+  display: none;
+}
 .mobile-nav {
   width: 100vw;
 }

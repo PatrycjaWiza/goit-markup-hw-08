@@ -1,8 +1,7 @@
 .inactive {
   display: none;
 }
-.mobile-menu__btn,
-#menu-button {
+.mobile-menu__btn {
   display: none;
 }
 .mobile-nav {
@@ -22,6 +21,7 @@
     padding: 0;
   }
   .mobile-menu__btn {
+    display: inline-block;
     border: none;
     background-color: transparent;
   }

@@ -89,8 +89,7 @@ img {
   display: none;
 }
 
-.mobile-menu__btn,
-#menu-button {
+.mobile-menu__btn {
   display: none;
 }
 
@@ -112,6 +111,7 @@ img {
     padding: 0;
   }
   .mobile-menu__btn {
+    display: inline-block;
     border: none;
     background-color: transparent;
   }
@@ -667,6 +667,9 @@ img {
   }
   .newsletter__email {
     min-width: 358px;
+  }
+  .newsletter__lbl {
+    text-align: left;
   }
 }
 

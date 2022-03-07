@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  background-image: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
@@ -24,6 +23,10 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/header/header-bg-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
   }
 }
 
@@ -49,6 +52,10 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/header/header-bg-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
   }
 }
 
@@ -62,7 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 600px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -74,5 +81,9 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/header/header-bg-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
   }
 }

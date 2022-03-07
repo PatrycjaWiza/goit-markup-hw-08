@@ -170,3 +170,15 @@
   color: $light-theme;
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
+  .contact-form {
+    min-width: 448px;
+  }
+  .agreement {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}

@@ -39,6 +39,11 @@
     }
   }
 }
-// .clients__item:not(last-child) {
-//   margin-right: 30px;
-// }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+  .clients__link {
+    max-width: 170px;
+  }
+}

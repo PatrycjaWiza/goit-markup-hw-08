@@ -10,6 +10,7 @@
   padding-top: 118px;
   padding-bottom: 30px;
 }
+
 .article__title {
   font-weight: 600;
   font-size: 14px;
@@ -19,11 +20,6 @@
   margin: 0;
   text-align: center;
   padding-top: 30px;
-}
-@media screen and (min-width: 768px) {
-  .article__title {
-    text-align: left;
-  }
 }
 .what-we-do__title {
   font-weight: 700;
@@ -65,4 +61,18 @@
   line-height: 2;
   letter-spacing: 0.06em;
   padding-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .article__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__title {
+    padding-top: 200px;
+  }
+  .clients__title {
+    padding-bottom: 50px;
+  }
 }

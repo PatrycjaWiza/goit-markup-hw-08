@@ -33,10 +33,12 @@
 .newsletter__icon {
   margin-left: 24px;
 }
-
-// .newsletter {
-//   display: flex;
-//   align-items: center;
-// }
-// .newsletter__email {
-//   margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    display: flex;
+    align-items: center;
+  }
+  .newsletter__email {
+    min-width: 358px;
+  }
+}

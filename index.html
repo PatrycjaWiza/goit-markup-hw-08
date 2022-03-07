@@ -17,14 +17,59 @@
   <body>
     <!-- menu -->
     <header class="menu">
+      <!-- mobile nav -->
+    <nav class="mobile-nav inactive" data-mobile>
+      <ul class="mobile-menu">
+        <li class="mobile__item list">
+          <a class="link" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile__item list">
+          <a class="link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile__item list">
+          <a class="link" href="#kontakt">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="mobile-contact">
+        <li class="mobile-contact__item list">
+          <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li class="mobile-contact__item list">
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item list">
+          <a class="link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-social__item list">
+          <a class="link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-social__item list">
+          <a class="link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-social__item list">
+          <a class="link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+      <button class="mobile-btn mobile-btn_close" type="button" data-mobile-close>
+        <svg width="44" height="44" >
+          <use href="./images/icons.svg#icon-close-btn" ></use>
+        </svg>
+              </button>
+    </nav>
       <div class="container">
+        
         <nav class="navigation">
-          <a class="logo logo--light-theme link" href="index.html"
+                    <a class="logo logo--light-theme link" href="index.html"
             ><span class="logo_accent">Web</span>Studio</a
           >
-          <svg id="menu-button">
-            <use href="images/icons.svg#icon-mobile-menu"></use>
-          </svg>
+          <button class="mobile-menu__btn" type="button" data-mobile-open>
+            <svg id="menu-button">
+              <use href="images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          
           <ul class="navigation__list list" id="menu">
             <li class="navigation__item">
               <a class="navigation__link link bar-agency" href="index.html"
@@ -136,7 +181,10 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__img"
-                src="images/section2/section2_img1.jpg"
+                src="./images/what-we-do/WWD-desktop-1.jpg"
+                srcset="
+                ./images/what-we-do/WWD-desktop-1@2x.jpg 2x
+                "
                 alt="Picture of coding on a computer"
                 width="370"
                 height="294"
@@ -148,8 +196,11 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__img"
-                src="images/section2/section2_img2.jpg"
-                alt="Picutre of coding for mobile version"
+                src="./images/what-we-do/WWD-desktop-2.jpg"
+                srcset="
+                ./images/what-we-do/WWD-desktop-2@2x.jpg 2x
+                "
+                alt="Picture of coding on a computer"
                 width="370"
                 height="294"
               />
@@ -160,8 +211,11 @@
             <li class="what-we-do__item">
               <img
                 class="what-we-do__img"
-                src="images/section2/section2_img3.jpg"
-                alt="Picture of color pallet"
+                src="./images/what-we-do/WWD-desktop-3.jpg"
+                srcset="
+                ./images/what-we-do/WWD-desktop-3@2x.jpg 2x
+                "
+                alt="Picture of coding on a computer"
                 width="370"
                 height="294"
               />
@@ -596,6 +650,8 @@
           </button>
       </div>
     </div>
+    
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

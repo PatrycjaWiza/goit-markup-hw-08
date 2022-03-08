@@ -16,9 +16,9 @@
     line-height: 1.175;
     letter-spacing: 0.02em;
     position: absolute;
-    min-width: 480px;
     min-height: 796px;
     padding: 0;
+    z-index: 1;
   }
   .mobile-menu__btn {
     display: inline-block;

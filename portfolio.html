@@ -17,12 +17,60 @@
   <body>
     <!-- menu -->
     <header class="menu">
+      <!-- mobile nav -->
+      <nav class="mobile-nav inactive" data-mobile>
+        <ul class="mobile-menu">
+          <li class="mobile__item list">
+            <a class="link" href="index.html">Agencja</a>
+          </li>
+          <li class="mobile__item list">
+            <a class="link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile__item list">
+            <a class="link" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item list">
+            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+          <li class="mobile-contact__item list">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item list">
+            <a class="link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social__item list">
+            <a class="link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social__item list">
+            <a class="link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social__item list">
+            <a class="link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+        <button
+          class="mobile-btn mobile-btn_close"
+          type="button"
+          data-mobile-close
+        >
+          <svg width="44" height="44">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </nav>
+
       <div class="container">
         <nav class="navigation">
           <a class="logo logo--light-theme link" href="index.html"
             ><span class="logo_accent">Web</span>Studio</a
           >
-          <svg id="menu-button">
+          <svg id="menu-button" data-mobile-open>
             <use href="images/icons.svg#icon-mobile-menu"></use>
           </svg>
           <ul class="navigation__list list" id="menu">
@@ -605,5 +653,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

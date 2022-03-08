@@ -962,6 +962,12 @@ img {
   }
 }
 
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .clients__link {
   display: flex;
   align-items: center;
@@ -983,10 +989,14 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .clients__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .clients__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-right: 0px;
     margin-bottom: 0px;
   }
@@ -997,11 +1007,6 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-}
-
-.clients__list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {

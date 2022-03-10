@@ -1095,7 +1095,13 @@ img {
 
 @media screen and (min-width: 1200px) {
   .foo__wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .foo__wrapper .foo-left-side {
+    text-align: left;
+  }
+  .foo__wrapper .foo-right-side {
+    text-align: left;
   }
 }
 

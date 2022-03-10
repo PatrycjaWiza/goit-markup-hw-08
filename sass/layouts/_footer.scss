@@ -54,6 +54,14 @@
 }
 @media screen and (min-width: 1200px) {
   .foo__wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
+
+    .foo-left-side {
+      text-align: left;
+    }
+
+    .foo-right-side {
+      text-align: left;
+    }
   }
 }

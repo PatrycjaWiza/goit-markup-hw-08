@@ -671,6 +671,7 @@ img {
   }
   .newsletter__lbl {
     text-align: left;
+    margin: 0;
   }
 }
 
